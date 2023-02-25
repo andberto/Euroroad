@@ -1,0 +1,1418 @@
+Source,Target
+Greenock,Glasgow
+Glasgow,Preston
+Glasgow,Edinburgh
+Preston,Birmingham
+Birmingham,Southampton
+Birmingham,Cambridge
+Le Havre,Paris
+Le Havre,Amiens
+Paris,Orléans
+Paris,Calais
+Paris,Lyon
+Paris,Brussels
+Paris,Le Mans
+Paris,Reims
+Paris,Chaumont
+Orléans,Bordeaux
+Orléans,Tours
+Orléans,Montargis
+Orléans,Toulouse
+Bordeaux,San Sebastián
+Bordeaux,Clermont-Ferrand
+Bordeaux,Toulouse
+Bordeaux,Angoulême
+San Sebastián,Burgos
+San Sebastián,Bilbao
+San Sebastián,Toulouse
+Burgos,Madrid
+Burgos,Valladolid
+Madrid,Seville
+Madrid,Barcelona
+Madrid,Valencia
+Madrid,Lisbon
+Seville,Algeciras
+Seville,Huelva
+Seville,Mérida
+Algeciras,Málaga
+Inverness,Perth
+Perth,Edinburgh
+Edinburgh,Newcastle
+Newcastle,London
+Newcastle,Carlisle
+London,Folkestone
+London,Bristol
+London,Colchester
+London,Northampton
+Folkestone,Dover
+Calais,Bruges
+Calais,Rouen
+Lyon,Orange
+Lyon,Clermont-Ferrand
+Lyon,Chambéry
+Lyon,Pont-d'Ain
+Lyon,Grenoble
+Orange,Narbonne
+Orange,Marseille
+Narbonne,Girona
+Girona,Barcelona
+Barcelona,Tarragona
+Barcelona,Toulouse
+Tarragona,Castellón de la Plana
+Castellón de la Plana,Valencia
+Valencia,Alicante
+Alicante,Murcia
+Murcia,Almería
+Almería,Málaga
+Málaga,Granada
+Hook of Holland,Rotterdam
+Hook of Holland,The Hague
+Rotterdam,Eindhoven
+Rotterdam,Ludwigshafen
+Eindhoven,Maastricht
+Eindhoven,Antwerp
+Eindhoven,Venlo
+Eindhoven,Breda
+Maastricht,Liège
+Liège,Bastogne
+Liège,Leuven
+Liège,Eupen
+Liège,Antwerp
+Liège,Namur
+Liège,St. Vith
+Liège,Charleville-Mézières
+Bastogne,Arlon
+Arlon,Luxembourg
+Luxembourg,Metz
+Luxembourg,St. Vith
+Luxembourg,Charleville-Mézières
+Luxembourg,Trier
+Metz,Saint-Avold
+Metz,Lausanne
+Metz,Geneva
+Metz,Brussels
+Metz,Reims
+Metz,Saarbrücken
+Saint-Avold,Strasbourg
+Strasbourg,Mulhouse
+Strasbourg,Appenweier
+Mulhouse,Basel
+Mulhouse,Belfort
+Mulhouse,Chaumont
+Mulhouse,Remiremont
+Basel,Olten
+Basel,Offenburg
+Basel,Zürich
+Basel,Waldshut
+Olten,Bern
+Olten,Lucerne
+Bern,Lausanne
+Bern,Belfort
+Bern,Martigny
+Lausanne,Geneva
+Lausanne,Martigny
+Geneva,Mont Blanc
+Geneva,Chambéry
+Geneva,Mâcon
+Mont Blanc,Aosta
+Aosta,Ivrea
+Aosta,Martigny
+Ivrea,Vercelli
+Ivrea,Turin
+Vercelli,Alessandria
+Alessandria,Genoa
+Alessandria,Turin
+Alessandria,Tortona
+Alessandria,Asti
+Genoa,Rome
+Genoa,Tortona
+Genoa,Nice
+Bastia,Porto-Vecchio
+Porto-Vecchio,Bonifacio
+Porto Torres,Sassari
+Sassari,Cagliari
+Sassari,Olbia
+Amsterdam,Utrecht
+Amsterdam,Amersfoort
+Amsterdam,Brussels
+Amsterdam,Groningen
+Utrecht,Arnhem
+Utrecht,Gouda
+Utrecht,Amersfoort
+Utrecht,Gorinchem
+Arnhem,Emmerich
+Emmerich,Oberhausen
+Oberhausen,Cologne
+Oberhausen,Dortmund
+Oberhausen,Venlo
+Cologne,Frankfurt am Main
+Cologne,Aachen
+Cologne,Olpe
+Cologne,Sarreguemines
+Cologne,Bremen
+Frankfurt am Main,Heidelberg
+Frankfurt am Main,Gießen
+Frankfurt am Main,Mannheim
+Frankfurt am Main,Aschaffenburg
+Frankfurt am Main,Wiesbaden
+Heidelberg,Karlsruhe
+Karlsruhe,Offenburg
+Karlsruhe,Stuttgart
+Karlsruhe,Appenweier
+Offenburg,Donaueschingen
+Lucerne,Altdorf
+Altdorf,Gotthard Pass
+Altdorf,Zürich
+Gotthard Pass,Bellinzona
+Bellinzona,Lugano
+Bellinzona,San Bernardino
+Lugano,Chiasso
+Chiasso,Como
+Como,Milan
+Milan,Piacenza
+Milan,Turin
+Milan,Tortona
+Milan,Brescia
+Milan,Gravellona Toce
+Piacenza,Parma
+Parma,Modena
+Parma,La Spezia
+Modena,Florence
+Modena,Verona
+Modena,Bologna
+Florence,Rome
+Florence,Migliarino
+Rome,Pescara
+Rome,San Cesareo
+Karesuvanto,Karesuando
+Karesuando,Arvidsjaur
+Arvidsjaur,Östersund
+Östersund,Mora
+Östersund,Trondheim
+Östersund,Sundsvall
+Mora,Säffle
+Säffle,Gothenburg
+Gothenburg,Halmstad
+Gothenburg,Örebro
+Gothenburg,Oslo
+Frederikshavn,Aalborg
+Aalborg,Aarhus
+Aalborg,Nørresundby
+Aarhus,Vejle
+Vejle,Kolding
+Kolding,Flensburg
+Flensburg,Hamburg
+Hamburg,Hanover
+Hamburg,Berlin
+Hamburg,Bremen
+Hamburg,Lübeck
+Hanover,Göttingen
+Hanover,Bad Oeynhausen
+Hanover,Braunschweig
+Göttingen,Kassel
+Kassel,Fulda
+Kassel,Dortmund
+Fulda,Würzburg
+Würzburg,Nuremberg
+Würzburg,Aschaffenburg
+Würzburg,Stuttgart
+Würzburg,Ulm
+Nuremberg,Munich
+Nuremberg,Heilbronn
+Nuremberg,Rozvadov
+Nuremberg,Bayreuth
+Nuremberg,Regensburg
+Munich,Rosenheim
+Munich,Salzburg
+Munich,Ulm
+Munich,Lindau
+Munich,Deggendorf
+Munich,Garmisch-Partenkirchen
+Munich,Braunau am Inn
+Rosenheim,Wörgl
+Rosenheim,Bad Reichenhall
+Wörgl,Innsbruck
+Wörgl,St. Johann in Tirol
+Innsbruck,Brenner
+Innsbruck,Telfs
+Innsbruck,Lauterach
+Innsbruck,Imst
+Innsbruck,Seefeld
+Brenner,Fortezza
+Fortezza,Bolzano
+Fortezza,Innichen
+Bolzano,Trento
+Trento,Verona
+Verona,Mestre
+Verona,Brescia
+Bologna,Cesena
+Cesena,Perugia
+Cesena,Ravenna
+Cesena,Rimini
+Perugia,Fiano Romano
+Fiano Romano,Naples
+Naples,Salerno
+Naples,Avellino
+Salerno,Sicignano degli Alburni
+Salerno,Avellino
+Sicignano degli Alburni,Cosenza
+Sicignano degli Alburni,Potenza
+Cosenza,Villa San Giovanni
+Cosenza,Crotone
+Messina,Catania
+Messina,Palermo
+Catania,Siracusa
+Catania,Enna
+Siracusa,Gela
+Gela,Mazara del Vallo
+Helsingør,Copenhagen
+Copenhagen,Køge
+Copenhagen,Malmö
+Copenhagen,Esbjerg
+Køge,Vordingborg
+Vordingborg,Farø
+Farø,Nykøbing Falster
+Farø,Rødby
+Nykøbing Falster,Gedser
+Rostock,Berlin
+Rostock,Lübeck
+Rostock,Sassnitz
+Berlin,Lübbenau
+Berlin,Szczecin
+Berlin,Świebodzin
+Berlin,Magdeburg
+Berlin,Leipzig
+Berlin,Neubrandenburg
+Lübbenau,Dresden
+Lübbenau,Cottbus
+Dresden,Ústí nad Labem
+Dresden,Chemnitz
+Dresden,Görlitz
+Ústí nad Labem,Prague
+Prague,Tábor
+Prague,Mladá Boleslav
+Prague,Jihlava
+Prague,Plzeň
+Prague,Karlovy Vary
+Prague,Hradec Králové
+Tábor,Linz
+Linz,Salzburg
+Linz,Sattledt
+Linz,Sankt Pölten
+Linz,Wels
+Salzburg,Villach
+Salzburg,Bad Reichenhall
+Salzburg,Sattledt
+Salzburg,Lofer
+Villach,Tarvisio
+Villach,Karavanke Tunnel
+Villach,Spittal an der Drau
+Villach,Klagenfurt
+Tarvisio,Udine
+Udine,Palmanova
+Palmanova,Mestre
+Palmanova,Trieste
+Mestre,Ravenna
+Rimini,Fano
+Fano,Ancona
+Fano,Sansepolcro
+Ancona,Pescara
+Pescara,Canosa di Puglia
+Canosa di Puglia,Bari
+Canosa di Puglia,Benevento
+Bari,Brindisi
+Bari,Taranto
+Brindisi,Taranto
+Igoumenitsa,Preveza
+Igoumenitsa,Ioannina
+Preveza,Rhion
+Rhion,Patras
+Rhion,Aigio
+Patras,Pyrgos
+Pyrgos,Kalamata
+Kalamata,Tripoli
+Malmö,Ystad
+Malmö,Helsingborg
+Malmö,Trelleborg
+Malmö,Kalmar
+Świnoujście,Wolin
+Wolin,Goleniów
+Goleniów,Szczecin
+Goleniów,Koszalin
+Szczecin,Gorzów Wielkopolski
+Gorzów Wielkopolski,Świebodzin
+Świebodzin,Zielona Góra
+Świebodzin,Poznań
+Zielona Góra,Legnica
+Legnica,Jelenia Góra
+Legnica,Görlitz
+Legnica,Wrocław
+Legnica,Cottbus
+Jelenia Góra,Harrachov
+Harrachov,Železný Brod
+Železný Brod,Turnov
+Turnov,Mladá Boleslav
+Turnov,Hradec Králové
+Turnov,Teplice
+Jihlava,Brno
+Jihlava,Vienna
+Brno,Bratislava
+Brno,Trenčín
+Brno,Vienna
+Brno,Olomouc
+Brno,Svitavy
+Bratislava,Rajka
+Bratislava,Žilina
+Bratislava,Győr
+Bratislava,Vienna
+Bratislava,Zvolen
+Bratislava,Dunajská Streda
+Rajka,Csorna
+Csorna,Szombathely
+Szombathely,Zalaegerszeg
+Zalaegerszeg,Nagykanizsa
+Nagykanizsa,Letenye
+Nagykanizsa,Zagreb
+Nagykanizsa,Balatonvilágos
+Letenye,Zagreb
+Letenye,Torniyiszentmiklós
+Zagreb,Karlovac
+Zagreb,Ljubljana
+Zagreb,Slavonski Brod
+Zagreb,Maribor
+Karlovac,Rijeka
+Karlovac,Knin
+Rijeka,Split
+Rijeka,Trieste
+Rijeka,Pula
+Split,Dubrovnik
+Split,Knin
+Dubrovnik,Petrovac
+Dubrovnik,Podgorica
+Petrovac,Podgorica
+Petrovac,Prizren
+Podgorica,Bijelo Polje
+Podgorica,Pristina
+Podgorica,Sarajevo
+Bijelo Polje,Pristina
+Bijelo Polje,Nova Varoš
+Pristina,Skopje
+Pristina,Niš
+Pristina,Prizren
+Skopje,Kičevo
+Skopje,Kumanovo
+Skopje,Veles
+Kičevo,Ohrid
+Ohrid,Bitola
+Bitola,Niki
+Niki,Vevi
+Vevi,Kozani
+Kozani,Larissa
+Kozani,Thessaloniki
+Kozani,Ioannina
+Larissa,Domokos
+Larissa,Lamia
+Larissa,Katerini
+Larissa,Trikala
+Larissa,Volos
+Domokos,Lamia
+Lamia,Brallos
+Lamia,Athens
+Lamia,Karpenisi
+Brallos,Itea
+Itea,Antirrio
+Aigio,Corinth
+Corinth,Tripoli
+Corinth,Megara
+Tripoli,Sparti
+Kissamos,Chania
+Chania,Heraklion
+Vardø,Vadsø
+Vadsø,Varangerbotn
+Varangerbotn,Utsjoki
+Varangerbotn,Kirkenes
+Varangerbotn,Karasjok
+Utsjoki,Inari
+Inari,Ivalo
+Ivalo,Sodankylä
+Sodankylä,Rovaniemi
+Sodankylä,Kemijärvi
+Rovaniemi,Kemi
+Kemi,Oulu
+Kemi,Tornio
+Oulu,Jyväskylä
+Oulu,Kokkola
+Jyväskylä,Heinola
+Jyväskylä,Kuopio
+Jyväskylä,Tampere
+Heinola,Lahti
+Lahti,Helsinki
+Helsinki,Hämeenlinna
+Helsinki,Turku/Naantali
+Helsinki,Kotka
+Gdańsk,Świecie
+Gdańsk,Kaliningrad
+Gdańsk,Elbląg
+Gdańsk,Gdynia
+Świecie,Łódź
+Świecie,Poznań
+Łódź,Piotrków Trybunalski
+Piotrków Trybunalski,Katowice
+Piotrków Trybunalski,Warsaw
+Piotrków Trybunalski,Wrocław
+Katowice,Žilina
+Katowice,Zabrze
+Katowice,Kraków
+Katowice,Český Těšín
+Žilina,Olomouc
+Győr,Budapest
+Győr,Vámosszabadi
+Budapest,Szeged
+Budapest,Mosonmagyaróvár
+Budapest,Szolnok
+Budapest,Miskolc
+Budapest,Balatonvilágos
+Budapest,Szekszárd
+Budapest,Zvolen
+Szeged,Subotica
+Szeged,Arad
+Subotica,Novi Sad
+Subotica,Sombor
+Novi Sad,Belgrade
+Belgrade,Niš
+Belgrade,Slavonski Brod
+Belgrade,Vršac
+Belgrade,Čačak
+Niš,Kumanovo
+Niš,Drobeta-Turnu Severin
+Niš,Sofia
+Kumanovo,Kyustendil
+Veles,Gevgelija
+Gevgelija,Evzoni
+Evzoni,Thessaloniki
+Thessaloniki,Katerini
+Thessaloniki,Alexandroupoli
+Thessaloniki,Serres
+Heraklion,Agios Nikolaos
+Agios Nikolaos,Sitia
+Klaipėda,Kaunas
+Klaipėda,Palanga
+Kaunas,Vilnius
+Kaunas,Warsaw
+Kaunas,Riga
+Kaunas,Ukmergė
+Vilnius,Lida
+Vilnius,Minsk
+Vilnius,Marijampolė
+Vilnius,Ukmergė
+Lida,Slonim
+Slonim,Kobryn
+Kobryn,Dubno
+Dubno,Ternopil
+Ternopil,Chernivtsi
+Ternopil,Stryj
+Ternopil,Khmelnytskyi
+Chernivtsi,Siret
+Siret,Suceava
+Suceava,Roman
+Suceava,Halmeu
+Suceava,Iaşi
+Roman,Urziceni
+Urziceni,Bucharest
+Urziceni,Slobozia
+Bucharest,Giurgiu
+Bucharest,Ploieşti
+Bucharest,Constanţa
+Bucharest,Alexandria
+Bucharest,Piteşti
+Giurgiu,Ruse
+Ruse,Byala
+Ruse,Razgrad
+Byala,Veliko Tarnovo
+Byala,Pleven
+Veliko Tarnovo,Stara Zagora
+Veliko Tarnovo,Shumen
+Veliko Tarnovo,Yablanitsa
+Stara Zagora,Haskovo
+Stara Zagora,Burgas
+Stara Zagora,Popovica
+Haskovo,Svilengrad
+Svilengrad,Ormenio
+Ormenio,Kastanies
+Kastanies,Didymoteicho
+Didymoteicho,Alexandroupoli
+Alexandroupoli,Gelibolu
+Saint Petersburg,Pskov
+Saint Petersburg,Moscow
+Saint Petersburg,Petrozavodsk
+Saint Petersburg,Narva
+Saint Petersburg,Vyborg
+Pskov,Gomel
+Pskov,Riga
+Gomel,Kiev
+Gomel,Babruysk
+Kiev,Odessa
+Kiev,Hlukhiv
+Kiev,Kharkiv
+Kiev,Rivne
+Kiev,Zhytomyr
+Odessa,Izmail
+Odessa,Chişinău
+Odessa,Mykolaiv
+Samsun,Merzifon
+Samsun,Ordu
+Moscow,Kaluga
+Moscow,Orel
+Moscow,Yaroslavl
+Moscow,Voronezh
+Moscow,Tambov
+Moscow,Smolensk
+Moscow,Ryazan
+Moscow,Velikiye Luki
+Moscow,Vladimir
+Kaluga,Bryansk
+Bryansk,Hlukhiv
+Hlukhiv,Kursk
+Kirkenes,Murmansk
+Murmansk,Petrozavodsk
+Orel,Kharkiv
+Kharkiv,Simferopol
+Kharkiv,Luhansk
+Simferopol,Alushta
+Alushta,Yalta
+Voronezh,Novorossiysk
+Voronezh,Kursk
+Voronezh,Saratov
+Novorossiysk,Dzhankoy
+Novorossiysk,Sochi
+Mineralnye Vody,Nalchik
+Mineralnye Vody,Makhachkala
+Mineralnye Vody,Armavir
+Nalchik,Vladikavkaz
+Vladikavkaz,Stepantsminda
+Stepantsminda,Mtskheta
+Mtskheta,Tbilisi
+Tbilisi,Marneuli
+Tbilisi,Gori
+Tbilisi,Rustavi
+Marneuli,Bolnisi
+Marneuli,Sadakhlo
+Bolnisi,Yerevan
+Yerevan,Goris
+Goris,Megri
+Tambov,Povorino
+Povorino,Volgograd
+Volgograd,Astrakhan
+Volgograd,Luhansk
+Astrakhan,Makhachkala
+Astrakhan,Atyrau
+Makhachkala,Kuba
+Kuba,Baku
+Baku,Alyat
+Baku,Yevlakh
+Alyat,Astara
+Alyat,Saatly Rayon
+Samara,Oral
+Samara,Penza
+Samara,Ufa
+Oral,Atyrau
+Oral,Saratov
+Oral,Aktobe
+Atyrau,Beineu
+Atyrau,Beyneu
+Beineu,Shetpe
+Shetpe,Zhetybai
+Zhetybai,Fetisovo
+Fetisovo,Bekdash
+Bekdash,Türkmenbaşy
+Türkmenbaşy,Gyzylarbat
+Gyzylarbat,Ashgabat
+Chelyabinsk,Kostanay
+Chelyabinsk,Ufa
+Chelyabinsk,Kurgan
+Kostanay,Esil
+Esil,Derzhavinsk
+Derzhavinsk,Arkalyk
+Arkalyk,Jezkazgan
+Jezkazgan,Kyzylorda
+Jezkazgan,Karaganda
+Kyzylorda,Shymkent
+Kyzylorda,Novokazalinsk
+Shymkent,Tashkent
+Shymkent,Zhambyl
+Tashkent,Ayni
+Tashkent,Jizzakh
+Tashkent,Kokand
+Ayni,Dushanbe
+Ayni,Kokand
+Dushanbe,Panji Poyon
+Dushanbe,Termez
+Dushanbe,Jirgatal
+Dushanbe,Kulob
+Ishim,Astana
+Ishim,Omsk
+Ishim,Kurgan
+Ishim,Tyumen
+Astana,Karaganda
+Astana,Atbasar
+Karaganda,Balkhash
+Karaganda,Pavlodar
+Balkhash,Burubaytal
+Burubaytal,Almaty
+Almaty,Bishkek
+Almaty,Sary-Ozek
+Almaty,Kokpek
+Bishkek,Naryn
+Bishkek,Zhambyl
+Bishkek,Osh
+Naryn,Torugart Pass
+Omsk,Pavlodar
+Pavlodar,Semey
+Pavlodar,Uspenovka
+Semey,Georgiyevka
+Georgiyevka,Maikapshagai
+Georgiyevka,Ayagoz
+Georgiyevka,Oskemen
+Å,Svolvær
+Melbu,Sortland
+Sortland,Lødingen
+Lødingen,Evenes
+Evenes,Narvik
+Narvik,Kiruna
+Narvik,Ballangen
+Narvik,Setermoen
+Kiruna,Töre
+Töre,Luleå
+Luleå,Umeå
+Luleå,Haparanda
+Shannon,Limerick
+Limerick,Dublin
+Dublin,Rosslare
+Dublin,Drogheda
+Liverpool,Manchester
+Manchester,Leeds
+Manchester,Warrington
+Leeds,Kingston upon Hull
+Leeds,Doncaster
+Helsingborg,Halmstad
+Helsingborg,Jönköping
+Örebro,Stockholm
+Örebro,Karlstad
+Örebro,Västerås
+Stockholm,Södertälje
+Stockholm,Uppsala
+Tallinn,Narva
+Tallinn,Riga
+Tallinn,Tartu
+Tallinn,Keila
+Cork,Waterford
+Cork,Portlaoise
+Waterford,Wexford
+Wexford,Rosslare
+Fishguard,Swansea
+Swansea,Bridgend
+Bridgend,Cardiff
+Cardiff,Newport
+Newport,Bristol
+Colchester,Ipswich
+Colchester,Harwich
+Ipswich,Felixstowe
+Ipswich,Cambridge
+The Hague,Gouda
+Amersfoort,Oldenzaal
+Amersfoort,Hoogeveen
+Oldenzaal,Osnabrück
+Osnabrück,Bad Oeynhausen
+Bad Oeynhausen,Dortmund
+Braunschweig,Magdeburg
+Magdeburg,Halle
+Poznań,Warsaw
+Poznań,Wrocław
+Warsaw,Brest
+Warsaw,Elbląg
+Warsaw,Radom
+Warsaw,Lublin
+Brest,Minsk
+Brest,Rennes
+Brest,Lorient
+Minsk,Smolensk
+Minsk,Babruysk
+Ryazan,Penza
+Ufa,Yelabuga
+Bruges,Ghent
+Bruges,Zeebrugge
+Bruges,Roeselare
+Ghent,Brussels
+Brussels,Leuven
+Leuven,Hasselt
+Eupen,Aachen
+Eupen,St. Vith
+Eupen,Eynatten
+Aachen,Heerlen
+Olpe,Wetzlar
+Wetzlar,Gießen
+Wetzlar,Dortmund
+Wetzlar,Aschaffenburg
+Wetzlar,Koblenz
+Gießen,Bad Hersfeld
+Bad Hersfeld,Eisenach
+Eisenach,Erfurt
+Erfurt,Gera
+Gera,Chemnitz
+Gera,Leipzig
+Gera,Hirschberg
+Chemnitz,Plauen
+Wrocław,Opole
+Wrocław,Kłodzko
+Opole,Gliwice
+Gliwice,Zabrze
+Kraków,Rzeszów
+Kraków,Radom
+Kraków,Trstená
+Rzeszów,Jarosław
+Rzeszów,Radom
+Rzeszów,Barwinek
+Jarosław,Korczowa
+Korczowa,Lviv
+Lviv,Rivne
+Lviv,Mukachevo
+Lviv,Lublin
+Rivne,Zhytomyr
+Rivne,Kovel
+Zhytomyr,Vinnytsia
+Beyneu,Qo‘ng‘irot
+Qo‘ng‘irot,Nukus
+Nukus,Daşoguz
+Daşoguz,Bukhara
+Daşoguz,Ashgabat
+Daşoguz,Uchkuduk
+Bukhara,Navoiy
+Bukhara,Alat
+Bukhara,Karshi
+Bukhara,Uchkuduk
+Navoiy,Samarkand
+Samarkand,Jizzakh
+Samarkand,Guza
+Sary-Ozek,Taldykorgan
+Sary-Ozek,Koktal
+Taldykorgan,Ucharal
+Ucharal,Taskesken
+Taskesken,Ayagoz
+Taskesken,Bakhty
+Oskemen,Ridder
+Rennes,Le Mans
+Le Mans,Angers
+Le Mans,Tours
+Le Mans,Rouen
+Reims,Charleroi
+Reims,Charleville-Mézières
+Reims,Rouen
+Saarbrücken,Mannheim
+Saarbrücken,Trier
+Mannheim,Heilbronn
+Rozvadov,Plzeň
+Plzeň,Karlovy Vary
+Plzeň,České Budějovice
+Plzeň,Bayerisch Eisenstein
+Trenčín,Prešov
+Trenčín,Žiar nad Hronom
+Prešov,Košice
+Prešov,Svidník
+Košice,Vyšné Nemecké
+Košice,Uzhhorod
+Košice,Miskolc
+Košice,Zvolen
+Vyšné Nemecké,Uzhhorod
+Uzhhorod,Mukachevo
+Uzhhorod,Chop
+Mukachevo,Stryj
+Mukachevo,Halmeu
+Khmelnytskyi,Vinnytsia
+Vinnytsia,Uman
+Vinnytsia,Mohyliv-Podilskyi
+Uman,Kirovohrad
+Kirovohrad,Dnipropetrovsk
+Kirovohrad,Chişinău
+Kirovohrad,Poltava
+Dnipropetrovsk,Donetsk
+Donetsk,Rostov-on-Don
+Rostov-on-Don,Armavir
+Rostov-on-Don,Taganrog
+Lorient,Vannes
+Vannes,Nantes
+Nantes,Angers
+Nantes,Poitiers
+Angers,Tours
+Tours,Vierzon
+Montargis,Auxerre
+Auxerre,Beaune
+Beaune,Dole
+Beaune,Antwerp
+Dole,Besançon
+Besançon,Belfort
+Zürich,Winterthur
+Winterthur,St. Gallen
+Winterthur,Schaffhausen
+St. Gallen,St. Margrethen
+St. Margrethen,Bregenz
+St. Margrethen,Buchs
+Bregenz,Feldkirch
+Bregenz,Lindau
+Feldkirch,Landeck
+Feldkirch,Lauterach
+Feldkirch,Imst
+Landeck,Telfs
+Sattledt,Liezen
+Sattledt,Wels
+Sankt Pölten,Vienna
+Vienna,Nickelsdorf
+Vienna,Halámky
+Vienna,Graz
+Nickelsdorf,Mosonmagyaróvár
+Szolnok,Püspökladány
+Püspökladány,Oradea
+Püspökladány,Nyíregyháza
+Oradea,Cluj-Napoca
+Oradea,Berettyóújfalu
+Oradea,Beiuş
+Oradea,Satu Mare
+Oradea,Arad
+Cluj-Napoca,Turda
+Cluj-Napoca,Zalău
+Cluj-Napoca,Dej
+Turda,Târgu Mureş
+Turda,Sebeş
+Târgu Mureş,Braşov
+Braşov,Ploieşti
+Braşov,Sibiu
+Braşov,Piteşti
+Braşov,Bacău
+Ploieşti,Buzău
+Slobozia,Hârşova
+Slobozia,Galaţi
+Hârşova,Constanţa
+Constanţa,Agigea
+Constanţa,Varna
+Constanţa,Tulcea
+Agigea,Negru Vodă
+Poti,Senaki
+Poti,Batumi
+Senaki,Samtredia
+Senaki,Zugdidi
+Samtredia,Kutaisi
+Samtredia,Lanchkhuti
+Kutaisi,Khashuri
+Khashuri,Gori
+Rustavi,Ganja
+Ganja,Yevlakh
+Ashgabat,Tejen
+Ashgabat,Gaudan
+Tejen,Mary
+Mary,Türkmenabat
+Türkmenabat,Alat
+Karshi,Guzar
+Guzar,Sherobod
+Sherobod,Termez
+Jirgatal,Sary Tash
+Jirgatal,Khorugh
+Sary Tash,Irkeshtam
+Irkeshtam,Osh
+A Coruña,Bilbao
+A Coruña,Pontevedra
+Bilbao,Logroño
+Clermont-Ferrand,Montluçon
+Clermont-Ferrand,Montpellier
+Chambéry,Susa
+Chambéry,Marseille
+Susa,Turin
+Turin,Savona
+Tortona,Brescia
+Trieste,Postojna
+Trieste,Ljubljana
+Postojna,Ljubljana
+Ljubljana,Maribor
+Ljubljana,Naklo
+Vršac,Timişoara
+Timişoara,Drobeta-Turnu Severin
+Timişoara,Arad
+Drobeta-Turnu Severin,Craiova
+Craiova,Alexandria
+Craiova,Târgu Jiu
+Craiova,Calafat
+Craiova,Piteşti
+Razgrad,Shumen
+Shumen,Varna
+Varna,Burgas
+Ordu,Giresun
+Giresun,Trabzon
+Trabzon,Batumi
+Lisbon,Valladolid
+Lisbon,Porto
+Lisbon,Albufeira
+Toulouse,Nice
+Nice,Cuneo
+Sofia,Plovdiv
+Sofia,Botevgrad
+Sofia,Blagoevgrad
+Sofia,Kyustendil
+Plovdiv,Istanbul
+Istanbul,İzmit
+İzmit,Gerede
+İzmit,Bursa
+Gerede,Amasya
+Gerede,Kızılcahamam
+Amasya,Erzurum
+Erzurum,Gürbulak
+Gürbulak,Iran
+Mazara del Vallo,Palermo
+Reggio Calabria,Metaponto
+Metaponto,Taranto
+Metaponto,Potenza
+Ioannina,Trikala
+Ioannina,Arta
+Gelibolu,Keşan
+Gelibolu,Ayvalık
+Lapseki,Bursa
+Bursa,Ankara
+Bursa,Balıkesir
+Ankara,Adana
+Ankara,Kızılcahamam
+Ankara,Yozgat
+Adana,Nusaybin
+Nusaybin,Khabur River
+Khabur River,Iraq
+Larne,Belfast
+Belfast,Newry
+Belfast,Derry
+Belfast,Craigavon
+Newry,Dundalk
+Dundalk,Drogheda
+Pontevedra,Valença
+Valença,Porto
+Porto,Vila Real
+Albufeira,Castro Marim
+Castro Marim,Huelva
+Cherbourg-Octeville,La Rochelle
+Cherbourg-Octeville,Caen
+La Rochelle,Niort
+La Rochelle,Saintes
+Oslo,Hamar
+Oslo,Sandvika
+Oslo,Drammen
+Oslo,Askim
+Hamar,Lillehammer
+Lillehammer,Dombås
+Dombås,Trondheim
+Dombås,Åndalsnes
+Trondheim,Stjørdal
+Trondheim,Orkanger
+Stjørdal,Steinkjer
+Steinkjer,Mosjøen
+Mosjøen,Mo i Rana
+Mo i Rana,Rognan
+Mo i Rana,Umeå
+Rognan,Fauske
+Setermoen,Alta
+Alta,Olderfjord
+Olderfjord,Lakselv
+Olderfjord,Nordkapp
+Lakselv,Karasjok
+Pau,Jaca
+Jaca,Zaragoza
+Zaragoza,Logroño
+Vierzon,Montluçon
+Doncaster,Sheffield
+Doncaster,Immingham
+Sheffield,Nottingham
+Nottingham,Leicester
+Leicester,Northampton
+Antwerp,Zeebrugge
+Martigny,Sion
+Bremen,Groningen
+Bremen,Bremerhaven
+Bremen,Walsrode
+Orkanger,Vinjeøra
+Vinjeøra,Halsa
+Halsa,Straumsnes
+Straumsnes,Kristiansund Mainland Connection
+Kristiansund Mainland Connection,Batnfjordsøra
+Batnfjordsøra,Molde
+Vestnes,Skodje
+Skodje,Ålesund
+Ålesund,Volda
+Ålesund,Tresfjord
+Volda,Nordfjordeid
+Sandane,Førde
+Førde,Lavik
+Instefjord,Knarvik
+Knarvik,Bergen
+Bergen,Os
+Bergen,Arna
+Stord,Sveio
+Sveio,Aksdal
+Aksdal,Bokn
+Rennesøy,Randaberg
+Randaberg,Stavanger
+Stavanger,Sandnes
+Sandnes,Helleland
+Helleland,Flekkefjord
+Flekkefjord,Lyngdal
+Lyngdal,Mandal
+Mandal,Kristiansand
+Kristiansand,Arendal
+Hirtshals,Hjørring
+Hjørring,Nørresundby
+Stuttgart,Schaffhausen
+Stuttgart,Ulm
+Ulm,Lindau
+Lindau,Waldshut
+Buchs,Chur
+Chur,San Bernardino
+Puttgarden,Oldenburg in Holstein
+Oldenburg in Holstein,Lübeck
+Halle,Plauen
+Halle,Tournai
+Plauen,Schönberg
+Plauen,Hof
+Schönberg,Vojtanov
+Vojtanov,Cheb
+Cheb,Karlovy Vary
+Cheb,Marktredwitz
+Karlovy Vary,Teplice
+České Budějovice,Halámky
+České Budějovice,Humpolec
+Hirschberg,Hof
+Hof,Bayreuth
+Bayreuth,Schweinfurt
+Bayreuth,Marktredwitz
+Bayerisch Eisenstein,Deggendorf
+Liezen,Sankt Michael
+Liezen,Altenmarkt im Pongau
+Sankt Michael,Graz
+Graz,Maribor
+Graz,Spielfeld
+Graz,Klagenfurt
+Graz,Veszprém
+Maribor,Spielfeld
+Karavanke Tunnel,Naklo
+Naklo,Loiblpass
+Kemijärvi,Posio
+Posio,Kuusamo
+Kuusamo,Kajaani
+Kajaani,Iisalmi
+Iisalmi,Kuopio
+Tampere,Turku
+Tampere,Vaasa
+Tampere,Hämeenlinna
+Turku,Pori
+Riga,Šiauliai
+Riga,Ventspils
+Riga,Rēzekne
+Kłodzko,Kudowa-Zdrój
+Kudowa-Zdrój,Náchod
+Náchod,Hradec Králové
+Hradec Králové,Olomouc
+Miskolc,Debrecen
+Szekszárd,Mohács
+Mohács,Osijek
+Osijek,Đakovo
+Osijek,Sombor
+Đakovo,Šamac
+Šamac,Zenica
+Zenica,Mostar
+Zenica,Donji Vakuf
+Zenica,Sarajevo
+Mostar,Metković
+Šiauliai,Tolpaki
+Šiauliai,Palanga
+Šiauliai,Panevėžys
+Tolpaki,Kaliningrad
+Tolpaki,Nesterov
+Trstená,Ružomberok
+Ružomberok,Zvolen
+Debrecen,Berettyóújfalu
+Beiuş,Deva
+Deva,Petroşani
+Deva,Sibiu
+Deva,Arad
+Petroşani,Târgu Jiu
+Vidin,Vraca
+Vraca,Botevgrad
+Botevgrad,Jablanica
+Blagoevgrad,Serres
+Halmeu,Satu Mare
+Satu Mare,Zalău
+Sebeş,Sibiu
+Sibiu,Piteşti
+Pleven,Jablanica
+Izmail,Reni
+Reni,Galaţi
+Galaţi,Tulcea
+Galaţi,Giurgiuleşti
+Burgas,Malko Tarnovo
+Malko Tarnovo,Dereköy
+Dereköy,Kırklareli
+Kırklareli,Babaeski
+Babaeski,Havsa
+Havsa,Keşan
+Keşan,Tekirdağ
+Ayvalık,İzmir
+İzmir,Selçuk
+İzmir,Usak
+İzmir,Manisa
+İzmir,Çeşme
+Selçuk,Aydın
+Aydın,Denizli
+Denizli,Acıpayam
+Acıpayam,Korkuteli
+Korkuteli,Antalya
+Toprakkale,İskenderun
+İskenderun,Antakya
+Antakya,Yayladağı
+Yayladağı,Syria
+Kherson,Dzhankoy
+Kherson,Mykolaiv
+Kherson,Melitopol
+Sochi,Sukhumi
+Sukhumi,Zugdidi
+Şanlıurfa,Diyarbakır
+Diyarbakır,Bitlis
+Bitlis,Doğubeyazit
+Doğubeyazit,Iğdir
+Iğdir,Dilucu
+Dilucu,Sadarak
+Sadarak,Nakhchivan
+Jönköping,Linköping
+Linköping,Norrköping
+Norrköping,Södertälje
+Norrköping,Kalmar
+Uppsala,Sundsvall
+Sundsvall,Örnsköldsvik
+Örnsköldsvik,Umeå
+Haparanda,Tornio
+Tornio,Kolari
+Tromsø,Nordkjosbotn
+Nordkjosbotn,Skibotn
+Skibotn,Kilpisjärvi
+Kilpisjärvi,Kolari
+Kokkola,Vaasa
+Vaasa,Pori
+Arna,Voss
+Voss,Lærdal
+Lærdal,Tyin
+Tyin,Fagernes
+Fagernes,Hønefoss
+Hønefoss,Sandvika
+Stranraer,Gretna
+Gretna,Carlisle
+Arendal,Porsgrunn
+Porsgrunn,Larvik
+Larvik,Sandefjord
+Sandefjord,Horten
+Horten,Drammen
+Drammen,Kongsberg
+Askim,Karlstad
+Västerås,Stockholm/Kapellskär
+Kotka,Vaalimaa
+Vaalimaa,Vyborg
+Holyhead,Chester
+Chester,Warrington
+Groningen,Hoogeveen
+Sassnitz,Stralsund
+Rēzekne,Velikiye Luki
+Rēzekne,Daugavpils
+Rēzekne,Ostrov
+Vladimir,Nizhny Novgorod
+Nizhny Novgorod,Kazan
+Kazan,Yelabuga
+Yelabuga,Perm
+Perm,Yekaterinburg
+Yekaterinburg,Tyumen
+Koszalin,Słupsk
+Słupsk,Gdynia
+Nesterov,Marijampolė
+Zeebrugge,Jabbeke
+Aktobe,Karabutak
+Karabutak,Aral
+Aral,Novokazalinsk
+Dunkirk,Lille
+Lille,Mons
+Mons,Charleroi
+Charleroi,Namur
+Charleroi,Nivelles
+St. Vith,Wittlich
+Wittlich,Bingen
+Bingen,Wiesbaden
+Amiens,Charleville-Mézières
+Trier,Koblenz
+Caen,Rouen
+Caen,Saint-Brieuc
+Regensburg,Passau
+Passau,Wels
+Wels,Braunau am Inn
+Iaşi,Sculeni
+Iaşi,Săbăoani
+Iaşi,Bălţi
+Sculeni,Chişinău
+Chişinău,Leuşeni
+Chişinău,Giurgiuleşti
+Melitopol,Taganrog
+Poitiers,Mâcon
+Sion,Simplon
+Simplon,Gravellona Toce
+Innichen,Spittal an der Drau
+Klagenfurt,Loiblpass
+Veszprém,Székesfehérvár
+Cuneo,Asti
+Pisa,Migliarino
+Grosseto,Arezzo
+Arezzo,Sansepolcro
+Vila Real,Bragança
+Vila Real,Viseu
+Vila Real,Chaves
+Bragança,Zamora
+Bragança,Guarda
+Zamora,Tordesillas
+Tekirdağ,Silivri
+Kristalopigi,Florina
+Florina,Vévi
+Vévi,Géfira
+Yozgat,Sivas
+Sivas,Refahiye
+Megara,Attiki Odos
+Usak,Afyonkarahisar
+Afyonkarahisar,Sivrihisar
+Topboğazi,Kırıkhan
+Kırıkhan,Reyhanlı
+Reyhanlı,Cilvegözü
+Sadakhlo,Bagratashen
+Bagratashen,Vanadzor
+Saatly Rayon,Mehgri
+Mehgri,Ordubad
+Ordubad,Djulfa
+Djulfa,Nakhchivan
+Uchkuduk,Kzylorda
+Kokand,Andijan
+Andijan,Osh
+Kulob,Kalaikhumb
+Kalaikhumb,Khorugh
+Khorugh,Murghab
+Khorugh,Ishkoshim
+Murghab,Kulma
+Ishkoshim,Lyanga
+Lyanga,China
+Kokpek,Kegen
+Kokpek,Chundzha
+Kegen,Tyup
+Chundzha,Koktal
+Koktal,Khorgas
+Usharal,Druzhba
+Zapadnoe,Zhaksy
+Zapadnoe,Petropavl
+Zhaksy,Atbasar
+Haugesund,Røldal
+Røldal,Haukeli
+Haukeli,Seljord
+Seljord,Kongsberg
+Tresfjord,Åndalsnes
+Hoogeveen,Haselünne
+Haselünne,Cloppenburg
+Cuxhaven,Bremerhaven
+Stralsund,Neubrandenburg
+Ukmergė,Daugavpils
+Ukmergė,Panevėžys
+Tartu,Võru
+Tartu,Jõhvi
+Tartu,Valga
+Võru,Luhamaa
+Valga,Valka
+Valka,Valmiera
+Valmiera,Incukalns
+Keila,Paldiski
+Breda,Gorinchem
+Breda,Flushing
+Hasselt,Heerlen
+Barwinek,Vyšný Komárnik
+Vyšný Komárnik,Svidník
+Lublin,Kovel
+Trosna,Glukhkov
+Roeselare,Kortrijk
+Kortrijk,Tournai
+Olomouc,Český Těšín
+Courtney,Troyes
+Memmingen,Füssen
+Garmisch-Partenkirchen,Mittenwald
+Mittenwald,Seefeld
+Nyíregyháza,Chop
+Dunajská Streda,Medveďov
+Medveďov,Vámosszabadi
+Sărăţel,Reghin
+Reghin,Topliţa
+Topliţa,Gheorgheni
+Gheorgheni,Miercurea-Ciuc
+Miercurea-Ciuc,Sfântu Gheorghe
+Sfântu Gheorghe,Chichiş
+Tişiţa,Tecuci
+Tecuci,Albiţa
+Albiţa,Leuşeni
+Bălţi,Mohyliv-Podilskyi
+Krasnodar,Djoubga
+Saintes,Angoulême
+Angoulême,Limoges
+Digoin,Chalon-sur-Saône
+St. Johann in Tirol,Lofer
+Balatonkeresztúr,Nagyatád
+Nagyatád,Barcs
+Barcs,Virovitica
+Virovitica,Okučani
+Okučani,Banja Luka
+Banja Luka,Jajce
+Jajce,Donji Vakuf
+Jajce,Bihać
+Lugoj,Ilia
+Negru Vodă,Kardam
+Ashtarak,Gyumri
+Gyumri,Ashotsk
+Ashotsk,Akhalkalaki
+Akhalkalaki,Akhaltsikhe
+Akhaltsikhe,Vale
+Vale,Türkgözü
+Türkgözü,Posof
+Posof,Kars
+Kars,Horasan
+Supsa,Lanchkhuti
+Grenoble,Valence
+Pula,Koper
+Sarajevo,Užice
+Užice,Čačak
+Čačak,Kraljevo
+Čačak,Nova Varoš
+Kraljevo,Kruševac
+Kruševac,Pojate
+Pojate,Paraćin
+Paraćin,Zaječar
+Coimbra,Viseu
+Chaves,Verín
+Chaves,Famalicão
+Guarda,Castelo Branco
+Castelo Branco,Portalegre
+Castelo Branco,Abrantes
+Portalegre,Évora
+Évora,Beja
+Beja,Ourique
+Salamanca,Mérida
+Torres Novas,Abrantes
+Avellino,Benevento
+Spezzano Albanese,Sybaris
+Sant'Eufemia Lamezia,Catanzaro
+Balıkesir,Manisa
+Jaén,Granada
+Buonfornello,Enna
+Alcamo,Trapani
+Arta,Agrinio
+Agrinio,Messolonghi
+Aktio,Vonitsa
+Vonitsa,Amfilochia
+Amfilochia,Karpenisi
+Sparti,Gytheio
+Eleusina,Thebes
