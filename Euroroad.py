@@ -12,11 +12,16 @@ import itertools
 from scipy.cluster.hierarchy import fcluster, linkage, dendrogram
 from scipy.spatial.distance import squareform
 import networkx.algorithms.community as nx_comm
+import cpnet
+import infomap
+import math
 
 DIGIT_PRECISION = 3
 TOP_NODES = 7
 NUMBER_OF_PARTITIONS = 15
 ALPHA = 0.9
+REMOVALS_PER_ITER = 1
+ROBUSTNESS_SIM_LIMIT = 5
 
 def plot_stats(graph):
     stats = {}
@@ -139,6 +144,7 @@ def plot_degree_distribution(graph):
     cs = np.cumsum(cnt)
     plt.xlabel("k")
     plt.ylabel(r'$\bar{P}$' + "(k)",fontsize=12)
+    print(dict(zip(deg,cs)))
     plt.plot(deg, cs)
     plt.savefig("./Images/Cumulated_degree_distribution.png")
     plt.show()
@@ -210,23 +216,170 @@ def plot_alpha_communities(prob):
     
     plt.axhline(y = ALPHA, color = 'r', linestyle = 'dashed', label = "\u03B1")
     plt.xlabel('n° of communities', fontweight ='bold')
-    plt.ylabel('Persistance prob.', fontweight ='bold')
+    plt.ylabel('Persistence prob.', fontweight ='bold')
     plt.legend(loc="lower right")
     plt.ylim([max(ALPHA-0.2,0),1])
     plt.tight_layout()
+    plt.savefig("./Images/AlphaCommPlot.png")
     plt.show()
 
 def compute_k_core_decomposition(graph):
     core_numbers = nx.algorithms.core.core_number(graph)
-    print(len(inverse_community_mapping(core_numbers)[0][2]))
     kcoredf = pd.DataFrame({"Id":core_numbers.keys(), "kShellId":core_numbers.values()})
     kcoredf.to_csv("./Data/Euromap_GCC_kcoreDecomposition.csv", index=False)
 
+def simulate_attacks_failures(graph):
+    G = graph.copy()
+    N = G.number_of_nodes()
+    size_ratio_att_b, size_ratio_att_d, size_ratio_fai  = {}, {}, {}
+    efficiency_ratio_att_b, efficiency_ratio_att_d, efficiency_ratio_fai = {}, {}, {}
+
+    #Failures simulation
+    removed_nodes = 0
+    while(G.number_of_nodes() > ROBUSTNESS_SIM_LIMIT):
+        if(G.number_of_nodes() == 0): S = 0
+        else: S = len(max(nx.connected_components(G), key=len))
+
+        size_ratio_fai[removed_nodes/N] =  S / N
+        efficiency_ratio_fai[removed_nodes/N] = nx.global_efficiency(G)
+
+        for i in range(REMOVALS_PER_ITER):
+            if(G.number_of_nodes() == 0): break
+            G.remove_node(random.choice(list(G.nodes)))
+            removed_nodes+=1
+                    
+    G = graph.copy() #restore graph
+
+    #Attacks simulation degree
+    removed_nodes = 0
+    degrees = dict(G.degree)
+    sorted_nodes = sorted(degrees, key=degrees.get, reverse=True) #ordered list by nodes degree
+    while(G.number_of_nodes() > ROBUSTNESS_SIM_LIMIT):
+        if(G.number_of_nodes() == 0): S = 0
+        else: S = len(max(nx.connected_components(G), key=len))
+        
+        size_ratio_att_d[removed_nodes/N] =  S / N
+        efficiency_ratio_att_d[removed_nodes/N] = nx.global_efficiency(G)
+        
+        for i in range(REMOVALS_PER_ITER):
+            if(G.number_of_nodes() == 0): break
+            G.remove_node(sorted_nodes.pop(0))
+            removed_nodes+=1
+
+    G = graph.copy() #restore graph
+    removed_nodes = 0
+    betwennesses = dict(nx.betweenness_centrality(G))
+    sorted_nodes = sorted(betwennesses, key=betwennesses.get, reverse=True) #ordered list by nodes degree
+
+    #Attacks simulation betweennes
+    while(G.number_of_nodes() > ROBUSTNESS_SIM_LIMIT):
+        if(G.number_of_nodes() == 0): S = 0
+        else: S = len(max(nx.connected_components(G), key=len))
+        
+        size_ratio_att_b[removed_nodes/N] =  S / N
+        efficiency_ratio_att_b[removed_nodes/N] = nx.global_efficiency(G)
+        
+        for i in range(REMOVALS_PER_ITER):
+            if(G.number_of_nodes() == 0): break
+            G.remove_node(sorted_nodes.pop(0))
+            removed_nodes+=1
+
+    fig, ax = plt.subplots()
+    ax.plot(size_ratio_fai.keys(), size_ratio_fai.values(), color="blue", label="Failures")
+    ax.plot(size_ratio_att_d.keys(), size_ratio_att_d.values(), color="red", label="Attacks - degree")
+    ax.plot(size_ratio_att_b.keys(), size_ratio_att_b.values(), color="green", label="Attacks - betweennes")
+    ax.set_xlabel("Removed nodes")
+    ax.set_ylabel("S / N")
+    ax.legend()
+    plt.savefig("./Images/SN_ratio_robustness.png")
+    plt.show()
+
+    fig, ax = plt.subplots()
+    ax.plot(efficiency_ratio_fai.keys(), efficiency_ratio_fai.values(), color='blue', label="Failures")
+    ax.plot(efficiency_ratio_att_d.keys(), efficiency_ratio_att_d.values(), color='red', label="Attacks - degree")
+    ax.plot(efficiency_ratio_att_b.keys(), efficiency_ratio_att_b.values(), color='green', label="Attacks - betweennes")
+    ax.set_xlabel("Removed nodes")
+    ax.set_ylabel("Efficiency")
+    ax.legend()
+    plt.savefig("./Images/Efficiency_ratio_robustness.png")
+    plt.show()
+
+def core_periphery_profile(graph):
+    alg = cpnet.Rossa() # Load the Borgatti-Everett algorithm
+    alg.detect(graph) # Feed the network as an input
+    corness = alg.get_coreness()  # Get the coreness of nodes
+    c = alg.get_pair_id()  # Get the group membership of nodes
+
+    AlphaDf = pd.DataFrame({"Id":corness.keys(), "CornessCPP":corness.values()})
+    AlphaDf.to_csv("./Data/Euromap_CorePeripheryProfile.csv", index=False)
+
+    
+    cmap = plt.cm.plasma
+
+    vmin = min(corness.values())
+    vmax = max(corness.values())
+    norm = plt.Normalize(vmin, vmax)
+
+    sortedx = sorted(corness, key=corness.get, reverse=True)
+
+    n = len(graph.nodes())
+    r_max = math.sqrt(n)
+
+    # Definisce il parametro phi della spirale
+    phi = math.pi / 24
+    spiral = {}
+    # Assegna a ogni nodo la sua posizione sulla spirale di Archimede
+    for i, node in enumerate(sortedx):
+        r = math.sqrt(i + 1)  # Aggiungi 1 per evitare la radice quadrata di 0
+        theta = i * phi
+        x = r * math.cos(theta)
+        y = r * math.sin(theta)
+        spiral[node]= (x, y)  # Salva la posizione come attributo del nodo
+
+    # Disegna il grafo con le posizioni dei nodi
+    nx.draw(graph, pos=spiral, with_labels=False, node_color=[cmap(norm(corness[node])) for node in graph.nodes()],
+            cmap=cmap, node_size = 30, edge_color="#ccc")
+
+    for node in dict(Counter(dict(graph.degree())).most_common(TOP_NODES)).keys():
+        x, y = spiral[node]
+        plt.text(x, y, node, ha="center", va="bottom", fontweight="bold")
+
+    sm = plt.cm.ScalarMappable(cmap=cmap, norm=norm)
+    sm.set_array([])
+    plt.colorbar(sm, shrink=0.7)
+    plt.tight_layout()
+    plt.savefig("./Images/Core_periphery_profile.png")
+    plt.show()
+
+def compute_infomap(graph):
+    im = infomap.Infomap("--two-level")
+    im.add_networkx_graph(graph)
+    im.run()
+
+    print(f"Found {im.num_top_modules} modules with codelength: {im.codelength}")
+
+    infomap_com = {}
+    for node in im.nodes:
+        infomap_com[node.node_id] = node.module_id
+
+    names = pd.read_csv("./Data/Euromap_labels.csv", usecols=["city_name"])
+
+    named = pd.DataFrame(columns=["Id", "ModuleId"])
+    for index, row in names.iterrows():
+        if((index + 1) in infomap_com):
+            newrow = {'Id': names['city_name'].iloc[index], 'ModuleId': infomap_com[index + 1]}
+            named = named.append(newrow, ignore_index=True)
+
+    named.to_csv("./Data/Euromap_GCC_infomap.csv", index=False)
+    print("Infomap modularity ", nx_comm.modularity(graph, inverse_community_mapping(infomap_com)[0].values()))
+    
 def main():
     # Load the data
     nodesdata = pd.read_csv("./Data/Euromap_node_data.csv", usecols=["city_name", "lat", "long"])
     edges = pd.read_csv("./Data/Euromap_named_edges.csv")
+    unamed_edges = pd.read_csv("./Data/Euromap_edges.csv")
     graph = nx.from_pandas_edgelist(edges, source = 'Source', target = 'Target')
+    unamed_graph = nx.from_pandas_edgelist(unamed_edges, source = 'from', target = 'to')
 
     sns.set()
 
@@ -239,13 +392,22 @@ def main():
     df = nx.to_pandas_edgelist(GCC)
     df.to_csv("./Data/Euromap_GCC.csv", index=False)
 
+    unamed_GCC = unamed_graph.subgraph(sorted(nx.connected_components(unamed_graph), key=len, reverse=True)[0])
+
     #plot_stats(GCC)
     #plot_rankings(GCC)
     #plot_degree_distribution(GCC)
 
     # Core-Periphery analysis
-    compute_k_core_decomposition(GCC)
-    
+    #compute_k_core_decomposition(GCC)
+    #core_periphery_profile(GCC)
+
+    # Failures attack analysis
+    #simulate_attacks_failures(GCC)
+
+    #Compute infomap
+    compute_infomap(unamed_GCC)
+    exit(0)
     # Alpha partition analysis
     persistance_probabilities = {}
     partitions = hierarchial_divisive_clustering(GCC, NUMBER_OF_PARTITIONS)
