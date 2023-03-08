@@ -18,7 +18,7 @@ import math
 
 DIGIT_PRECISION = 3
 TOP_NODES = 7
-NUMBER_OF_PARTITIONS = 15
+NUMBER_OF_PARTITIONS = 25
 ALPHA = 0.9
 REMOVALS_PER_ITER = 1
 ROBUSTNESS_SIM_LIMIT = 5
@@ -195,12 +195,37 @@ def compute_persistance_probabilities(graph, partition):
 
     return persistance_probabilities
 
-def hierarchial_divisive_clustering(graph, t_max):
+def mean_first_passage_time(adjacency):
+    P = np.linalg.solve(np.diag(np.sum(adjacency, axis=1)), adjacency)
+
+    n = len(P)
+    D, V = np.linalg.eig(P.T)
+
+    aux = np.abs(D - 1)
+    index = np.where(aux == aux.min())[0]
+
+    if aux[index] > 10e-3:
+        raise ValueError("Cannot find eigenvalue of 1. Minimum eigenvalue " +
+                         "value is {0}. Tolerance was ".format(aux[index]+1) +
+                         "set at 10e-3.")
+
+    w = V[:, index].T
+    w = w / np.sum(w)
+
+    W = np.real(np.repeat(w, n, 0))
+    I = np.eye(n)
+
+    Z = np.linalg.inv(I - P + W)
+
+    mfpt = (np.repeat(np.atleast_2d(np.diag(Z)), n, 0) - Z) / W
+
+    return mfpt
+
+def hierarchial_divisive_clustering(graph, distance_matrix, t_max):
     partitions = {}
-    distance_matrix = nx.floyd_warshall_numpy(graph)
 
     # Appy divisive clustering
-    Z = linkage(squareform(distance_matrix), 'ward')
+    Z = linkage(distance_matrix, 'ward')
     for i in range(1,t_max+1):
         clusters = fcluster(Z, i , criterion='maxclust')
         community = {}
@@ -218,7 +243,7 @@ def plot_alpha_communities(prob):
     plt.xlabel('n° of communities', fontweight ='bold')
     plt.ylabel('Persistence prob.', fontweight ='bold')
     plt.legend(loc="lower right")
-    plt.ylim([max(ALPHA-0.2,0),1])
+    plt.ylim([min(ALPHA-0.1,max(min(prob[NUMBER_OF_PARTITIONS].values())-0.1,0)),1])
     plt.tight_layout()
     plt.savefig("./Images/AlphaCommPlot.png")
     plt.show()
@@ -406,11 +431,13 @@ def main():
     #simulate_attacks_failures(GCC)
 
     #Compute infomap
-    compute_infomap(unamed_GCC)
-    exit(0)
+    #compute_infomap(unamed_GCC)
+
     # Alpha partition analysis
     persistance_probabilities = {}
-    partitions = hierarchial_divisive_clustering(GCC, NUMBER_OF_PARTITIONS)
+    #distances = mean_first_passage_time(nx.to_numpy_array(GCC))
+    distances = squareform(nx.floyd_warshall_numpy(GCC))
+    partitions = hierarchial_divisive_clustering(GCC, distances, NUMBER_OF_PARTITIONS)
     for nop in range(2, NUMBER_OF_PARTITIONS + 1):
         persistance_probabilities[nop] = compute_persistance_probabilities(GCC,partitions[nop])
 
@@ -420,11 +447,12 @@ def main():
         if(all(prob > ALPHA for prob in persistance_probabilities[nop].values())):
             best_partition = partitions[nop]
         else: break
+        print(nop," : ",min(persistance_probabilities[nop].values()))
 
     AlphaDf = pd.DataFrame({"Id":best_partition.keys(), "AlphaCommId":best_partition.values()})
     AlphaDf.to_csv("./Data/Euromap_GCC_alphaComm.csv", index=False)
     best_partition, _ = inverse_community_mapping(best_partition)
-    print("Best alpha-partition modularity: ", nx_comm.modularity(GCC, best_partition.values()))
+    print("Best alpha-partition modularity (q = ", len(best_partition) ,"): ", nx_comm.modularity(GCC, best_partition.values()))
     Louvain, _ = inverse_community_mapping(community_louvain.best_partition(GCC))
     print("Louvain modularity: ", nx_comm.modularity(GCC, Louvain.values()))
 
