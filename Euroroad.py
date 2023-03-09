@@ -19,7 +19,7 @@ import math
 DIGIT_PRECISION = 3
 TOP_NODES = 7
 NUMBER_OF_PARTITIONS = 25
-ALPHA = 0.9
+ALPHA = 0.7
 REMOVALS_PER_ITER = 1
 ROBUSTNESS_SIM_LIMIT = 5
 
@@ -435,8 +435,8 @@ def main():
 
     # Alpha partition analysis
     persistance_probabilities = {}
-    #distances = mean_first_passage_time(nx.to_numpy_array(GCC))
-    distances = squareform(nx.floyd_warshall_numpy(GCC))
+    distances = mean_first_passage_time(nx.to_numpy_array(GCC))
+    #distances = squareform(nx.floyd_warshall_numpy(GCC))
     partitions = hierarchial_divisive_clustering(GCC, distances, NUMBER_OF_PARTITIONS)
     for nop in range(2, NUMBER_OF_PARTITIONS + 1):
         persistance_probabilities[nop] = compute_persistance_probabilities(GCC,partitions[nop])
