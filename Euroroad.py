@@ -19,7 +19,7 @@ import math
 DIGIT_PRECISION = 3
 TOP_NODES = 7
 NUMBER_OF_PARTITIONS = 25
-ALPHA = 0.7
+ALPHA = 0.85
 REMOVALS_PER_ITER = 1
 ROBUSTNESS_SIM_LIMIT = 5
 
@@ -35,6 +35,7 @@ def plot_stats(graph):
     stats["Global clustering coefficient"] = round(nx.average_clustering(graph),DIGIT_PRECISION)
     stats["Density"] = round(nx.density(graph),DIGIT_PRECISION)
     stats["Efficiency"] = round(nx.global_efficiency(graph),DIGIT_PRECISION)
+    stats["Assortativity coefficient"] = round(nx.degree_assortativity_coefficient(graph),DIGIT_PRECISION)
     
     data = [(k, v) for k, v in stats.items()]
     
@@ -397,7 +398,18 @@ def compute_infomap(graph):
 
     named.to_csv("./Data/Euromap_GCC_infomap.csv", index=False)
     print("Infomap modularity ", nx_comm.modularity(graph, inverse_community_mapping(infomap_com)[0].values()))
+    print("Infomap avg. conductance:", average_conductance(graph, inverse_community_mapping(infomap_com)[0]))
     
+def average_conductance(graph, partition):
+    avg_conductance = 0
+    for c in partition.values():
+        print(avg_conductance)
+        avg_conductance += nx.conductance(graph, c)
+    
+    avg_conductance = avg_conductance/len(partition.values())
+    print(len(partition.values()))
+    return avg_conductance
+
 def main():
     # Load the data
     nodesdata = pd.read_csv("./Data/Euromap_node_data.csv", usecols=["city_name", "lat", "long"])
@@ -419,7 +431,7 @@ def main():
 
     unamed_GCC = unamed_graph.subgraph(sorted(nx.connected_components(unamed_graph), key=len, reverse=True)[0])
 
-    #plot_stats(GCC)
+    plot_stats(GCC)
     #plot_rankings(GCC)
     #plot_degree_distribution(GCC)
 
@@ -435,8 +447,8 @@ def main():
 
     # Alpha partition analysis
     persistance_probabilities = {}
-    distances = mean_first_passage_time(nx.to_numpy_array(GCC))
-    #distances = squareform(nx.floyd_warshall_numpy(GCC))
+    #distances = mean_first_passage_time(nx.to_numpy_array(GCC))
+    distances = squareform(nx.floyd_warshall_numpy(GCC))
     partitions = hierarchial_divisive_clustering(GCC, distances, NUMBER_OF_PARTITIONS)
     for nop in range(2, NUMBER_OF_PARTITIONS + 1):
         persistance_probabilities[nop] = compute_persistance_probabilities(GCC,partitions[nop])
@@ -453,7 +465,9 @@ def main():
     AlphaDf.to_csv("./Data/Euromap_GCC_alphaComm.csv", index=False)
     best_partition, _ = inverse_community_mapping(best_partition)
     print("Best alpha-partition modularity (q = ", len(best_partition) ,"): ", nx_comm.modularity(GCC, best_partition.values()))
+    print("Best alpha-partition avg. conductance: ", average_conductance(GCC, best_partition))
     Louvain, _ = inverse_community_mapping(community_louvain.best_partition(GCC))
     print("Louvain modularity: ", nx_comm.modularity(GCC, Louvain.values()))
+    print("Louvain avg. conductance: ", average_conductance(GCC, Louvain))
 
 main()
