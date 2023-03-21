@@ -64,7 +64,7 @@ The key point of the project is the community analysis, some algorithms are eval
 
 | | | |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|<img src="Images/LouvainGeo_gephi.png " alt="Network Image">  blah |  <img src="Images/AlphaCommGeo_gephy_alpha_0.85_floyd.png" alt="Network Image">|<img src="Images/AlphaCommGeo_gephy_alpha_0.7_floyd.png" alt="Network Image">|
+|<img src="Images/LouvainGeo_gephi.png " alt="Network Image">  Louvain method |  <img src="Images/AlphaCommGeo_gephy_alpha_0.85_floyd.png" alt="Network Image"> Peristence probabilities alfa=0.85|<img src="Images/AlphaCommGeo_gephy_alpha_0.7_floyd.png" alt="Network Image"> Peristence probabilities alfa=0.7|
 
 <br><br>
 <h5 style="color:red">For further analysis check the EuroRoad.pdf file</h5>
