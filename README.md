@@ -62,7 +62,7 @@ structure and it’s very sparse.
 <h5>Community analysis</h5>
 The key point of the project is the community analysis, some algorithms are evaluated. The analysis revealed a strong community structure.
 
-| | | |
+
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img src="Images/LouvainGeo_gephi.png " alt="Network Image">  blah |  <img src="Images/AlphaCommGeo_gephy_alpha_0.85_floyd.png" alt="Network Image">|<img src="Images/AlphaCommGeo_gephy_alpha_0.7_floyd.png" alt="Network Image">|
 
