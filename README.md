@@ -4,7 +4,7 @@
 <h5 align="center"> Project Assignment - Complessità nei sistemi e nelle reti  - <a href="https://www.polimi.it/">Politecnico di Milano</a> (March 2023) </h5>
 
 <p align="center"> 
-  <img src="Images/flag.png" alt="Network Image" height="233" width="500">
+  <img src="Images/flag.png" alt="Network Image" height="133" width="300">
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -70,7 +70,7 @@ The key point of the project is the community analysis, some algorithms are eval
 |<img src="Images/LouvainGeo_gephi.png " alt="Network Image">  Louvain method |  <img src="Images/AlphaCommGeo_gephy_alpha_0.85_floyd.png" alt="Network Image"> Peristence probabilities alfa=0.85|<img src="Images/AlphaCommGeo_gephy_alpha_0.7_floyd.png" alt="Network Image"> Peristence probabilities alfa=0.7|
 
 <br><br>
-<span style="color:blue">For further analysis check the EuroRoad.pdf file</span>.
+###For further analysis check the EuroRoad.pdf file
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
