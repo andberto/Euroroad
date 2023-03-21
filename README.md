@@ -61,9 +61,10 @@ structure and it’s very sparse.
 <img src="Images/Degree_distribution.png" alt="Network Image" height="282px" width="337">
 <h5>Community analysis</h5>
 The key point of the project is the community analysis, some algorithms are evaluated. The analysis revealed a strong community structure.
+
 | | | |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|<img src="Images/LouvainGeo_gephi.png " alt="Network Image" height="341px" width="427">  blah | <img src="Images/AlphaCommGeo_gephy_alpha_0.85_floyd.png" alt="Network Image" height="341px" width="427">  | <img src="Images/AlphaCommGeo_gephy_alpha_0.7_floyd.png" alt="Network Image" height="341px" width="427"> |
+|<img src="Images/LouvainGeo_gephi.png " alt="Network Image" height="341px" width="427">  blah |  <img src="Images/AlphaCommGeo_gephy_alpha_0.85_floyd.png" alt="Network Image" height="341px" width="427">|<img src="Images/AlphaCommGeo_gephy_alpha_0.7_floyd.png" alt="Network Image" height="341px" width="427">|
 
 <br><br>
 <h5 style="color:red">For further analysis check the EuroRoad.pdf file</h5>
