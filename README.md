@@ -64,7 +64,7 @@ The key point of the project is the community analysis, some algorithms are eval
 
 | | | |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|<img src="Images/LouvainGeo_gephi.png " alt="Network Image" height="341px" width="427">  blah |  <img src="Images/AlphaCommGeo_gephy_alpha_0.85_floyd.png" alt="Network Image" height="341px" width="427">|<img src="Images/AlphaCommGeo_gephy_alpha_0.7_floyd.png" alt="Network Image" height="341px" width="427">|
+|<img src="Images/LouvainGeo_gephi.png " alt="Network Image">  blah |  <img src="Images/AlphaCommGeo_gephy_alpha_0.85_floyd.png" alt="Network Image">|<img src="Images/AlphaCommGeo_gephy_alpha_0.7_floyd.png" alt="Network Image">|
 
 <br><br>
 <h5 style="color:red">For further analysis check the EuroRoad.pdf file</h5>
