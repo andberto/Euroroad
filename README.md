@@ -4,7 +4,7 @@
 <h5 align="center"> Project Assignment - Complessità nei sistemi e nelle reti  - <a href="https://www.polimi.it/">Politecnico di Milano</a> (March 2023) </h5>
 
 <p align="center"> 
-  <img src="images/flag.png" alt="Network Image" height="282px" width="337">
+  <img src="Images/flag.png" alt="Network Image" height="282px" width="337">
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -57,14 +57,14 @@ Considering the average distance (≈18) and the degree
 distribution we can state that the network is neither small word
 nor scale-free, moreover the network has almost tree-like
 structure and it’s very sparse.
-<img src="images/Europe_stats.png " alt="Network Image" height="282px" width="337">
-<img src="images/Degree_distribution.png" alt="Network Image" height="282px" width="337">
+<img src="Images/Europe_stats.png " alt="Network Image" height="282px" width="337">
+<img src="Images/Degree_distribution.png" alt="Network Image" height="282px" width="337">
 <h5>Community analysis</h5>
 The key point of the project is the community analysis, some algorithms are evaluated. The analysis revealed a strong community structure.
 
-<img src="images/LouvainGeo_gephi.png " alt="Network Image" height="282px" width="337">
-<img src="images/AlphaCommGeo_gephy_alpha_0.85_floyd.png" alt="Network Image" height="282px" width="337">
-<img src="images/AlphaCommGeo_gephy_alpha_0.7_floyd.png" alt="Network Image" height="282px" width="337">
+<img src="Images/LouvainGeo_gephi.png " alt="Network Image" height="282px" width="337">
+<img src="Images/AlphaCommGeo_gephy_alpha_0.85_floyd.png" alt="Network Image" height="282px" width="337">
+<img src="Images/AlphaCommGeo_gephy_alpha_0.7_floyd.png" alt="Network Image" height="282px" width="337">
 <br><br>
 <h5 style="color:red">For further analysis check the EuroRoad.pdf file</h5>
 
