@@ -4,7 +4,7 @@
 <h5 align="center"> Project Assignment - Complessità nei sistemi e nelle reti  - <a href="https://www.polimi.it/">Politecnico di Milano</a> (March 2023) </h5>
 
 <p align="center"> 
-  <img src="Images/flag.png" alt="Network Image" height="133" width="233">
+  <img src="Images/flag.png" alt="Network Image" height="133" width="223">
 </p>
 
 <!-- TABLE OF CONTENTS -->
