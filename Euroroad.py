@@ -139,6 +139,8 @@ def plot_degree_distribution(graph):
     plt.xlabel("k")
     plt.ylabel("P(k)")
     plt.plot(deg, cnt)
+    plt.xscale("log")
+    plt.yscale("log")
     plt.savefig("./Images/Degree_distribution.png")
     plt.show()
 
@@ -431,9 +433,9 @@ def main():
 
     unamed_GCC = unamed_graph.subgraph(sorted(nx.connected_components(unamed_graph), key=len, reverse=True)[0])
 
-    plot_stats(GCC)
+    #plot_stats(GCC)
     #plot_rankings(GCC)
-    #plot_degree_distribution(GCC)
+    plot_degree_distribution(GCC)
 
     # Core-Periphery analysis
     #compute_k_core_decomposition(GCC)
