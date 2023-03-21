@@ -57,8 +57,11 @@ Considering the average distance (≈18) and the degree
 distribution we can state that the network is neither small word
 nor scale-free, moreover the network has almost tree-like
 structure and it’s very sparse.
-<img src="Images/Europe_stats.png " alt="Network Image" height="282px" width="337">
-<img src="Images/Degree_distribution.png" alt="Network Image" height="282px" width="337">
+
+| | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img src="Images/Europe_stats.png " alt="Network Image" height="282px" width="337"> |  <img src="Images/Degree_distribution.png" alt="Network Image" height="282px" width="337"> |<img src="Images/AlphaCommGeo_gephy_alpha_0.7_floyd.png" alt="Network Image"> Peristence probabilities alfa=0.7|
+
 <h5>Community analysis</h5>
 The key point of the project is the community analysis, some algorithms are evaluated. The analysis revealed a strong community structure.
 
@@ -67,7 +70,7 @@ The key point of the project is the community analysis, some algorithms are eval
 |<img src="Images/LouvainGeo_gephi.png " alt="Network Image">  Louvain method |  <img src="Images/AlphaCommGeo_gephy_alpha_0.85_floyd.png" alt="Network Image"> Peristence probabilities alfa=0.85|<img src="Images/AlphaCommGeo_gephy_alpha_0.7_floyd.png" alt="Network Image"> Peristence probabilities alfa=0.7|
 
 <br><br>
-\textcolor{red}{For further analysis check the EuroRoad.pdf file}
+<span style="color:blue">For further analysis check the EuroRoad.pdf file</span>.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
