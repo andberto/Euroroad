@@ -58,8 +58,8 @@ distribution we can state that the network is neither small word
 nor scale-free, moreover the network has almost tree-like
 structure and it’s very sparse.
 
-| | | |
-|:-------------------------:|:-------------------------:|:-------------------------:|
+| | |
+|:-------------------------:|:-------------------------:|
 |<img src="Images/Europe_stats.png " alt="Network Image" height="282px" width="337"> |  <img src="Images/Degree_distribution.png" alt="Network Image" height="282px" width="337"> |
 
 <h5>Community analysis</h5>
